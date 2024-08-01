@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #e1e9f0);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #7869ce;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    width: calc(50% - 20px);
+    padding: 12px;
+    margin: 10px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #0056b3;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #b9f506;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#lyrics {
+    margin-top: 20px;
+    padding: 15px;
+    background: #000000;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: calc(100% - 20px);
+    }
+}
